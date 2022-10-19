@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./App.css";
+import { ButtonDisplay } from "./ButtonDisplay/ButtonDisplay";
+import { Display } from "./Display/Display";
 
 function App() {
   const [total, setTotal] = useState("");
@@ -59,37 +61,13 @@ function App() {
   };
   return (
     <div className="App">
-      <div className="display">
-        <div>prev {prevValue}</div>
-        <div>{operation}</div>
-        <div>current-{total}</div>
-      </div>
-      <div className="button-display">
-        <button onClick={handleChange}>7</button>
-        <button onClick={handleChange}>8</button>
-        <button onClick={handleChange}>9</button>
-        <button onClick={handleDelete} className="blue-highlight">
-          DEL
-        </button>
-        <button onClick={handleChange}>4</button>
-        <button onClick={handleChange}>5</button>
-        <button onClick={handleChange}> 6</button>
-        <button onClick={handlePrevState}>+</button>
-        <button onClick={handleChange}>1</button>
-        <button onClick={handleChange}>2</button>
-        <button onClick={handleChange}>3</button>
-        <button onClick={handlePrevState}>-</button>
-        <button onClick={handleChange}>.</button>
-        <button onClick={handleChange}>0</button>
-        <button onClick={handlePrevState}>/</button>
-        <button onClick={handlePrevState}>*</button>
-        <button onClick={handleReset} className="span-two blue-highlight">
-          RESET
-        </button>
-        <button onClick={handlePrevState} className="span-two red-highlight">
-          =
-        </button>
-      </div>
+      <Display operation={operation} current={total} prev={prevValue} />
+      <ButtonDisplay
+        change={handleChange}
+        reset={handleReset}
+        changeState={handlePrevState}
+        delete={handleDelete}
+      />
     </div>
   );
 }
