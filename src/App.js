@@ -11,6 +11,10 @@ function App() {
   const handleChange = (e) => {
     const value = e.target.innerText;
     setTotal((state) => {
+      console.log(state);
+      if (state.length === 1 && state === 0) {
+        return state;
+      }
       return state + value;
     });
   };
