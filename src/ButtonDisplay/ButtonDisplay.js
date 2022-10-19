@@ -19,7 +19,7 @@ export function ButtonDisplay(props) {
       <button onClick={props.change}>0</button>
       <button onClick={props.changeState}>/</button>
       <button onClick={props.changeState}>*</button>
-      <button onClick={props.delete} className="span-two blue-highlight">
+      <button onClick={props.reset} className="span-two blue-highlight">
         RESET
       </button>
       <button onClick={props.changeState} className="span-two red-highlight">
