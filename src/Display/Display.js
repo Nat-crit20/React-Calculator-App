@@ -1,5 +1,7 @@
 export function Display(props) {
-  let prev = props.prev;
+  let prev = new Intl.NumberFormat(undefined, {
+    maximumFractionDigits: 15,
+  }).format(props.prev);
   let operation = props.operation;
   let current = new Intl.NumberFormat(undefined, {
     maximumFractionDigits: 15,

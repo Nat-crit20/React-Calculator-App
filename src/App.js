@@ -14,36 +14,49 @@ function App() {
       console.log(state);
       if (state.length === 1 && state === 0) {
         return state;
+      } else {
+        return state + value;
       }
-      return state + value;
     });
   };
 
   const handlePrevState = (e) => {
-    let prevState = total;
+    let prevTotal = total;
     if (!prevValue) {
+      if (e.target.innerText === "=") {
+        return;
+      }
+      setPrevValue(prevTotal);
       setOperation(e.target.innerText);
-      setPrevValue(prevState);
       setTotal("");
     } else {
-      calc();
+      calc(e);
     }
   };
+
   const handleReset = () => {
     setOperation("");
     setPrevValue("");
     setTotal("");
   };
+
   const handleDelete = () => {
     setTotal("");
   };
-  const calc = () => {
+
+  const calc = (e) => {
     let numTotal = Number(total);
     let numPrevValue = Number(prevValue);
-    setPrevValue();
     let finalTotal = mathOperation(operation, numPrevValue, numTotal);
-    setOperation("");
-    setTotal(finalTotal);
+    if (e.target.innerText === "=") {
+      setPrevValue("");
+      setOperation("");
+      setTotal(finalTotal);
+    } else {
+      setPrevValue(finalTotal);
+      setOperation(e.target.innerText);
+      setTotal("");
+    }
   };
 
   const mathOperation = (operand, x, y) => {
