@@ -1,3 +1,5 @@
+import { styles } from "../styles/Themes/Theme1/DisplayTheme1";
+
 export function Display(props) {
   let prev = new Intl.NumberFormat(undefined, {
     maximumFractionDigits: 15,
@@ -7,7 +9,7 @@ export function Display(props) {
     maximumFractionDigits: 15,
   }).format(props.current);
   return (
-    <div className="display">
+    <div style={styles}>
       <div>prev {prev}</div>
       <div>{operation}</div>
       <div>current-{current}</div>

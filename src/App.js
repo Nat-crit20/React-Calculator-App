@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "./App.css";
+import "./styles/App.css";
+import { styles } from "./styles/Themes/Theme1/AppTheme1";
 import { ButtonDisplay } from "./ButtonDisplay/ButtonDisplay";
 import { Display } from "./Display/Display";
 
@@ -77,7 +78,7 @@ function App() {
     }
   };
   return (
-    <div className="App">
+    <div style={styles} className="App">
       <Display operation={operation} current={total} prev={prevValue} />
       <ButtonDisplay
         change={handleChange}

@@ -1,30 +1,34 @@
+import { styles } from "../styles/Themes/Theme1/ButtonDisplayTheme1";
+import { Button } from "../Button/Button";
 export function ButtonDisplay(props) {
   return (
-    <div className="button-display">
-      <button onClick={props.change}>7</button>
-      <button onClick={props.change}>8</button>
-      <button onClick={props.change}>9</button>
-      <button onClick={props.delete} className="blue-highlight">
-        DEL
-      </button>
-      <button onClick={props.change}>4</button>
-      <button onClick={props.change}>5</button>
-      <button onClick={props.change}> 6</button>
-      <button onClick={props.changeState}>+</button>
-      <button onClick={props.change}>1</button>
-      <button onClick={props.change}>2</button>
-      <button onClick={props.change}>3</button>
-      <button onClick={props.changeState}>-</button>
-      <button onClick={props.change}>.</button>
-      <button onClick={props.change}>0</button>
-      <button onClick={props.changeState}>/</button>
-      <button onClick={props.changeState}>*</button>
-      <button onClick={props.reset} className="span-two blue-highlight">
-        RESET
-      </button>
-      <button onClick={props.changeState} className="span-two red-highlight">
-        =
-      </button>
+    <div style={styles} className="button-display">
+      <Button action={props.change} value={7} />
+      <Button action={props.change} value={8} />
+      <Button action={props.change} value={9} />
+      <Button action={props.delete} className="blue-highlight" value={"DEL"} />
+      <Button action={props.change} value={6} />
+      <Button action={props.change} value={7} />
+      <Button action={props.change} value={8} />
+      <Button action={props.changeState} value={"+"} />
+      <Button action={props.change} value={1} />
+      <Button action={props.change} value={2} />
+      <Button action={props.change} value={3} />
+      <Button action={props.changeState} value={"-"} />
+      <Button action={props.change} value={"."} />
+      <Button action={props.change} value={0} />
+      <Button action={props.change} value={"/"} />
+      <Button action={props.change} value={"*"} />
+      <Button
+        action={props.reset}
+        value={"RESET"}
+        className="span-two blue-highlight"
+      />
+      <Button
+        action={props.changeState}
+        value={"="}
+        className="span-two red-highlight"
+      />
     </div>
   );
 }
