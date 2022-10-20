@@ -1,3 +1,7 @@
 export function Button(props) {
-  return <button onClick={props.action}>{props.value}</button>;
+  return (
+    <button className={props.className} onClick={props.action}>
+      {props.value}
+    </button>
+  );
 }
