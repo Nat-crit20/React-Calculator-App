@@ -8,11 +8,15 @@ export function Display(props) {
   let current = new Intl.NumberFormat(undefined, {
     maximumFractionDigits: 15,
   }).format(props.current);
+  if (prev === "0") {
+    prev = "";
+  }
   return (
-    <div style={styles}>
-      <div>prev {prev}</div>
-      <div>{operation}</div>
-      <div>current-{current}</div>
+    <div style={styles} className="display">
+      <div>
+        {prev} {operation}
+      </div>
+      <div>{current}</div>
     </div>
   );
 }

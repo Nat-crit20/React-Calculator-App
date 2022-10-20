@@ -17,8 +17,8 @@ export function ButtonDisplay(props) {
       <Button action={props.changeState} value={"-"} />
       <Button action={props.change} value={"."} />
       <Button action={props.change} value={0} />
-      <Button action={props.change} value={"/"} />
-      <Button action={props.change} value={"*"} />
+      <Button action={props.changeState} value={"/"} />
+      <Button action={props.changeState} value={"*"} />
       <Button
         action={props.reset}
         value={"RESET"}
