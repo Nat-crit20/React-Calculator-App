@@ -9,7 +9,7 @@
 }
 .display {
   font-family: "League Spartan", sans-serif;
-  width: 27vw;
+  width: 460px;
   text-align: right;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -38,6 +38,7 @@ button {
   font-weight: 700;
   font-size: 2rem;
   border-radius: 10px;
+  cursor: pointer;
 }
 .span-two {
   grid-column: span 2;
