@@ -1,4 +1,6 @@
 import { styles } from "../styles/Themes/Theme1/DisplayTheme1";
+import { styles2 } from "../styles/Themes/Theme2/DisplayTheme2";
+import { styles3 } from "../styles/Themes/Theme3/DisplayTheme3";
 
 export function Display(props) {
   let prev = new Intl.NumberFormat(undefined, {
@@ -13,7 +15,7 @@ export function Display(props) {
     prev = "";
   }
   return (
-    <div style={styles} className="display">
+    <div style={styles3} className="display">
       <div>
         {prev} {operation}
       </div>

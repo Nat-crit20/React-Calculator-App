@@ -1,6 +1,6 @@
 const padding = "1rem";
-const background = "hsl(224, 36%, 15%)";
-export const styles = {
+const background = " hsl(268, 71%, 12%)";
+export const styles3 = {
   background: background,
   padding: padding,
 };
