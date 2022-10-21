@@ -1,4 +1,5 @@
 .App {
+  font-family: "League Spartan", sans-serif;
   text-align: center;
   height: 100vh;
   display: flex;
@@ -7,7 +8,8 @@
   align-items: center;
 }
 .display {
-  width: 21.25vw;
+  font-family: "League Spartan", sans-serif;
+  width: 27vw;
   text-align: right;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -15,16 +17,27 @@
 }
 .display div {
   margin: 0 1rem;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+}
+.display div:first-of-type {
+  font-size: 1.5rem;
+}
+.display div:last-of-type {
+  font-size: 3rem;
 }
 .button-display {
   border-radius: 10px;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(4, 75px);
-  grid-template-rows: repeat(5, 50px);
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(5, 75px);
 }
 button {
-  font-size: 1.5rem;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  border-radius: 10px;
 }
 .span-two {
   grid-column: span 2;

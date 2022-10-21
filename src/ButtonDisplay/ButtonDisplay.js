@@ -6,7 +6,7 @@ export function ButtonDisplay(props) {
       <Button action={props.change} value={7} />
       <Button action={props.change} value={8} />
       <Button action={props.change} value={9} />
-      <Button action={props.delete} className="blue-highlight" value={"DEL"} />
+      <Button action={props.delete} color="blue" value={"DEL"} />
       <Button action={props.change} value={6} />
       <Button action={props.change} value={7} />
       <Button action={props.change} value={8} />
@@ -22,12 +22,14 @@ export function ButtonDisplay(props) {
       <Button
         action={props.reset}
         value={"RESET"}
-        className="span-two blue-highlight"
+        className="span-two"
+        color="blue"
       />
       <Button
         action={props.changeState}
         value={"="}
-        className="span-two red-highlight"
+        className="span-two"
+        color="red"
       />
     </div>
   );

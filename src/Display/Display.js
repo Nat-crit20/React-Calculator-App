@@ -7,6 +7,7 @@ export function Display(props) {
   let operation = props.operation;
   let current = new Intl.NumberFormat(undefined, {
     maximumFractionDigits: 15,
+    maximumSignificantDigits: 15,
   }).format(props.current);
   if (prev === "0") {
     prev = "";
