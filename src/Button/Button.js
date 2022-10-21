@@ -6,7 +6,6 @@ export function Button(props) {
   if (!color) {
     color = "basic";
   }
-
   return (
     <button style={styles[color]} className={name} onClick={props.action}>
       {props.value}

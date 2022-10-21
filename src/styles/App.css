@@ -40,6 +40,13 @@ button {
   border-radius: 10px;
   cursor: pointer;
 }
+button:hover {
+  filter: saturate(2);
+  filter: brightness(1.2);
+}
+button:active {
+  transform: translateY(4px);
+}
 .span-two {
   grid-column: span 2;
 }
