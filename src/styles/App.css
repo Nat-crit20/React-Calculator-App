@@ -9,7 +9,7 @@
 }
 .display {
   font-family: "League Spartan", sans-serif;
-  width: 460px;
+  width: 360px;
   text-align: right;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -30,10 +30,18 @@
   border-radius: 10px;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(5, 75px);
+  grid-template-columns: repeat(4, 75px);
+  grid-template-rows: repeat(5, 50px);
 }
-
+@media only screen and (max-width: 600px) {
+  .display {
+    width: 340px;
+  }
+  .button-display {
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(5, 70px);
+  }
+}
 .display-head {
   display: flex;
   justify-content: space-between;
