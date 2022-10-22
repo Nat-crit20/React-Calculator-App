@@ -12,9 +12,7 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -33,8 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: ["https://Val7997.github.io/React-Calculator-App"]("https://Val7997.github.io/React-Calculator-App")
 
 ## My process
 
@@ -48,10 +45,12 @@ Users should be able to:
 
 ### What I learned
 
+I learned how to deploy a react app to Github Pages. I also learned about how to use props and hooks in React and I also learned about how to style with.
+
 ### Continued development
+
+I would like to style the radio buttons better and get remove the NaN error that pops up in the display. For the future I would like to implement a formula type calculate, because the one that I have right now it pretty basic.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Val7997](https://www.frontendmentor.io/profile/Val7997)
