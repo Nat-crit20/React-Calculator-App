@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: ["https://Val7997.github.io/React-Calculator-App"]("https://Val7997.github.io/React-Calculator-App")
+- Live Site URL: [https://Val7997.github.io/React-Calculator-App](https://Val7997.github.io/React-Calculator-App)
 
 ## My process
 
