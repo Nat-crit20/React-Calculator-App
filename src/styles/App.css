@@ -33,6 +33,34 @@
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: repeat(5, 75px);
 }
+
+.display-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-weight: 700;
+}
+.theme-choice {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5rem 0;
+}
+.theme-choice div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.theme-choice p:first-of-type {
+  font-size: 1rem;
+  margin-top: 0;
+}
+.header {
+  align-self: flex-end;
+  margin: 0 0.5rem;
+}
+.theme-choice div p {
+  margin: 0;
+}
+
 button {
   font-family: "League Spartan", sans-serif;
   font-weight: 700;

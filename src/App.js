@@ -6,10 +6,12 @@ import { styles3 } from "./styles/Themes/Theme3/AppTheme3";
 import { ButtonDisplay } from "./ButtonDisplay/ButtonDisplay";
 import { Display } from "./Display/Display";
 
+const Themes = [styles, styles2, styles3];
 function App() {
   const [total, setTotal] = useState("");
   const [prevValue, setPrevValue] = useState("");
   const [operation, setOperation] = useState("");
+  const [theme, setTheme] = useState(0);
 
   const handleChange = (e) => {
     const value = e.target.innerText;
@@ -48,6 +50,11 @@ function App() {
     setTotal("");
   };
 
+  const handleRadioChange = (e) => {
+    let clickTheme = e.target.value;
+    setTheme(clickTheme);
+  };
+
   const calc = (e) => {
     let numTotal = Number(total);
     let numPrevValue = Number(prevValue);
@@ -81,9 +88,16 @@ function App() {
     }
   };
   return (
-    <div style={styles3} className="App">
-      <Display operation={operation} current={total} prev={prevValue} />
+    <div style={Themes[theme]} className="App">
+      <Display
+        theme={theme}
+        change={handleRadioChange}
+        operation={operation}
+        current={total}
+        prev={prevValue}
+      />
       <ButtonDisplay
+        theme={theme}
         change={handleChange}
         reset={handleReset}
         changeState={handlePrevState}

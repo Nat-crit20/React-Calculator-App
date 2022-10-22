@@ -1,8 +1,8 @@
-const fontFamily = "Comic Sans MS, Lucida Handwriting, cursive";
 const background = "hsl(268, 75%, 9%)";
-const fontSize = "4em";
+const color = "hsl(52, 100%, 62%)";
+const fontSize = "2em";
 export const styles3 = {
-  fontFamily: fontFamily,
   background: background,
   fontSize: fontSize,
+  color: color,
 };
