@@ -21,7 +21,7 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 Users should be able to:
 
 - See the size of the elements adjust based on their device's screen size
-- Perform mathmatical operations like addition, subtraction, multiplication, and division
+- Perform mathematical operations like addition, subtraction, multiplication, and division
 - Adjust the color theme based on their preference
 - **Bonus**: Have their initial theme preference checked using `prefers-color-scheme` and have any additional changes saved in the browser
 
@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://Val7997.github.io/React-Calculator-App](https://Val7997.github.io/React-Calculator-App)
+- Live Site URL: [https://Nat-crit20.github.io/React-Calculator-App](https://Nat-crit20.github.io/React-Calculator-App)
 
 ## My process
 
@@ -49,8 +49,8 @@ I learned how to deploy a react app to Github Pages. I also learned about how to
 
 ### Continued development
 
-I would like to style the radio buttons better and get remove the NaN error that pops up in the display. For the future I would like to implement a formula type calculate, because the one that I have right now it pretty basic.
+I would like to style the radio buttons better and remove the NaN error that pops up in the display. For the future I would like to implement a formula type calculate, because the one that I have right now is pretty basic.
 
 ## Author
 
-- Frontend Mentor - [@Val7997](https://www.frontendmentor.io/profile/Val7997)
+- Frontend Mentor - [@Nat-crit20](https://www.frontendmentor.io/profile/Nat-crit20)
